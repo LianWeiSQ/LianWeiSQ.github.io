@@ -49,9 +49,7 @@ https://LianWeiSQ.github.io/
 
 - `assets/design-concept.png`：本次生成的视觉概念图，用于后续迭代时保持设计方向一致。
 
-## 上线前要替换
+## 后续可继续替换
 
-- `mailto:hello@example.com`：替换成真实邮箱，或删除 Email 链接。
 - 头像区域：现在是 SVG 占位，可以后续换成真实头像或个人符号。
-- Writing links：目前部分是占位 `#`，建议发布对应文章后补上真实链接。
 - News 时间线：每 1-2 周更新一次，让网站看起来持续经营。
