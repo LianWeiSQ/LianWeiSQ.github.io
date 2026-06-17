@@ -1,55 +1,63 @@
-# William / LianWeiSQ GitHub Pages
+# William / LianWeiSQ
 
-这是一个可以直接发布到 GitHub Pages 的静态个人主页，参考 `qzweng.github.io` 的学术主页信息架构，但内容定位为工程型开源个人品牌：
+Personal GitHub Pages site for William, focused on Agent Harness Engineering, OpenAgent, coding-agent infrastructure, evaluation systems, and AI-native software delivery.
 
-- Agent Harness Engineering
-- OpenAgent runtime
-- BrainBox sandbox
-- Fintech Agent
-- GitOps / eval / trace / context engineering
+Live site: <https://lianweisq.github.io/>
 
-## 本地预览
+## Positioning
+
+This site is built as a public technical profile rather than a generic portfolio. The main narrative is:
+
+- Turning coding agents from demos into auditable, testable, repeatable engineering workflows.
+- Building the model-external harness layer: tools, context, permissions, sandbox runtime, trace, replay, evaluation, and workflow orchestration.
+- Operating GitHub as a durable CV: projects, notes, contribution evidence, and progress records.
+
+## Highlights
+
+- **OpenAgent**: agent runtime direction covering AgentLoop, tool execution, MCP bridge, permissions, context snapshots, session ledgers, trace/replay, eval CI gates, Langfuse export, benchmark adapters, and Swarm Function Kernel.
+- **BrainBox**: Kubernetes sandbox infrastructure reference for agent workloads, including Manager API, controller reconciliation, Envoy routing, CI/CD, and E2E validation.
+- **Fintech Agent**: auditable domain-agent case study with evidence chains, event normalization, confidence scoring, report persistence, OpenAgent tool bridge, and D0/D1/D5 evaluation hooks.
+- **OpenAgent Workflow**: research direction for branch-per-task agent development, GitOps loops, eval-first merge gates, reruns, logs, and dashboard-driven review.
+
+## CV
+
+The site includes a dedicated CV section and a Markdown resume:
+
+- Homepage CV section: <https://lianweisq.github.io/#cv>
+- Markdown CV: <https://lianweisq.github.io/cv.md>
+
+## Local Preview
 
 ```bash
 python3 -m http.server 4173
 ```
 
-然后打开：
+Open:
 
 ```text
 http://127.0.0.1:4173
 ```
 
-## 发布到 GitHub Pages
-
-推荐创建用户主页仓库：
-
-```bash
-gh repo create LianWeiSQ.github.io --public --source=. --remote=origin --push
-```
-
-如果已经创建过仓库：
-
-```bash
-git init
-git branch -M main
-git remote add origin git@github.com:LianWeiSQ/LianWeiSQ.github.io.git
-git add .
-git commit -m "Launch personal homepage"
-git push -u origin main
-```
-
-GitHub Pages 用户站点会自动发布到：
+## Repository Structure
 
 ```text
-https://LianWeiSQ.github.io/
+.
+├── index.html
+├── styles.css
+├── script.js
+├── cv.md
+├── GITHUB_OPERATING_PLAN.md
+├── notes/
+└── assets/
 ```
 
-## 设计参考
+## Operating Rhythm
 
-- `assets/design-concept.png`：本次生成的视觉概念图，用于后续迭代时保持设计方向一致。
+- Update `News & Now` when a meaningful project milestone lands.
+- Keep `cv.md` aligned with the homepage CV section.
+- Add research notes under `notes/` when a workflow, architecture, or evaluation decision becomes reusable.
+- Refresh preview screenshots after major visual changes.
 
-## 后续可继续替换
+## Design Direction
 
-- 头像区域：现在是 SVG 占位，可以后续换成真实头像或个人符号。
-- News 时间线：每 1-2 周更新一次，让网站看起来持续经营。
+The visual language is intentionally editorial and technical: calm paper-like background, crisp cards, restrained green/blue accents, and strong emphasis on readable contribution evidence.

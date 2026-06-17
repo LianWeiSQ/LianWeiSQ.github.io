@@ -37,6 +37,7 @@
         <div class="nav-links" data-nav-links>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="#cv">CV</a>
           <a href="#writing">Writing</a>
           <a href="#github">GitHub Plan</a>
           <a href="#contact">Contact</a>
@@ -52,16 +53,16 @@
             <h1>William</h1>
             <h2>Agent Harness Engineer</h2>
             <p class="hero-lead">
-              我在构建 OpenAgent：一个围绕模型之外工程系统展开的 agent runtime，关注工具调用、上下文、
-              权限、沙箱执行、trace、eval 与 GitOps 协作开发。
+              我在构建 OpenAgent 和一组围绕 Agent Harness 的工程系统：从工具调用、上下文、权限、沙箱执行，
+              到 trace、eval、swarm runner 与 GitOps 协作开发闭环。
             </p>
             <p class="hero-lead english">
-              I build observable agent systems: tool execution, context engineering, sandboxed runtimes,
-              evaluation loops, and workflow control planes for AI-native software engineering.
+              I build observable agent systems that turn coding agents from impressive demos into
+              auditable, testable, and repeatable engineering workflows.
             </p>
             <div class="hero-actions">
               <a class="button primary" href="https://github.com/LianWeiSQ/openagent-ai">View OpenAgent</a>
-              <a class="button secondary" href="#projects">Explore Work</a>
+              <a class="button secondary" href="#cv">Read CV</a>
             </div>
           </div>
 
@@ -91,6 +92,7 @@
             <div class="profile-meta">
               <span>Based in China</span>
               <span>Building OpenAgent</span>
+              <span>Focus: Agent Harness</span>
               <span>GitHub: LianWeiSQ</span>
             </div>
           </aside>
@@ -105,21 +107,21 @@
         <div class="about-layout">
           <p>
             我的长期方向是把 coding agent 从“能跑 demo”推进到“可交付、可观测、可评测、可复盘”的工程系统。
-            这意味着不仅要关心模型回答，还要关心上下文怎么进模型、工具在哪里执行、权限如何收敛、失败如何复现、
-            能力提升是否有评测证据。
+            我主要贡献在模型之外的 harness 层：工具协议、上下文持久化、权限边界、沙箱运行时、trace / eval、
+            多 runner 编排，以及把 agent 变成团队软件交付流的一部分。
           </p>
           <div class="stat-list">
             <div>
               <strong>Runtime</strong>
-              <span>Agent loop, tools, MCP, sessions</span>
+              <span>Built AgentLoop, tool execution, permissions, MCP, sessions</span>
             </div>
             <div>
               <strong>Context</strong>
-              <span>Instruction snapshots, file state, compaction</span>
+              <span>Designed instruction snapshots, file state, compaction, session parts</span>
             </div>
             <div>
               <strong>Evaluation</strong>
-              <span>Trace, replay, CI gates, benchmark adapters</span>
+              <span>Shipped trace, replay, CI gates, Terminal-Bench and Harbor adapters</span>
             </div>
           </div>
         </div>
@@ -133,11 +135,15 @@
         <ol class="timeline">
           <li>
             <time datetime="2026-06">2026.06</time>
+            <p>发布个人 GitHub Pages，开始围绕 Agent Harness Engineering 系统经营开源履历。</p>
+          </li>
+          <li>
+            <time datetime="2026-06">2026.06</time>
             <p>梳理 OpenAgent 与 Codex GitOps 协作流差异，规划 `openagent-workflow` 外层控制面。</p>
           </li>
           <li>
             <time datetime="2026-06">2026.06</time>
-            <p>推进 Swarm Function Kernel：function / OpenAgent / subprocess / HTTP / A2A runner 协议。</p>
+            <p>推进 Swarm Function Kernel：function、OpenAgent、subprocess、HTTP、A2A runner 协议。</p>
           </li>
           <li>
             <time datetime="2026-06">2026.06</time>
@@ -163,13 +169,13 @@
             </div>
             <h3>Agent Harness Runtime</h3>
             <p>
-              Python runtime for tool-using agents: tool schemas, permissions, context management,
-              execution runtimes, session ledgers, traces, evals, and swarm orchestration.
+              I designed and implemented the core runtime direction: tool schema exposure, permission checks,
+              context persistence, session ledgers, trace events, eval gates, and a decoupled Swarm Function Kernel.
             </p>
             <ul>
-              <li>AgentLoop + tool execution</li>
-              <li>Context engineering and persistence</li>
-              <li>Eval / replay / Langfuse export</li>
+              <li>AgentLoop, builtin tools, MCP bridge, permission rulesets</li>
+              <li>Context pack snapshots, session parts, resume evidence</li>
+              <li>Eval / replay, CI gate, Langfuse export, benchmark adapters</li>
             </ul>
           </article>
 
@@ -180,9 +186,13 @@
             </div>
             <h3>Kubernetes Sandbox Platform</h3>
             <p>
-              A Go/Kubernetes sandbox service for isolated code execution, Manager APIs, controller loops,
-              data-plane proxying, GitLab CI, and E2E validation.
+              I use BrainBox as the sandbox infrastructure reference for agent execution: Manager APIs,
+              controller reconciliation, Envoy data-plane routing, GitLab CI, E2E tests, and local kind / OrbStack flows.
             </p>
+            <ul class="mini-list">
+              <li>Manager / Controller / Console architecture notes</li>
+              <li>CI pipeline and pjtest deployment runbook</li>
+            </ul>
           </article>
 
           <article class="project-card">
@@ -192,9 +202,13 @@
             </div>
             <h3>Auditable Financial Research Agent</h3>
             <p>
-              A finance-first research pipeline with source confidence, event normalization, audit trails,
-              report generation, and D0 / D1 / D5 evaluation hooks.
+              I built this as a domain proof that agents need evidence chains: authority-first sources,
+              event normalization, confidence scoring, SQLite audit trail, reports, and D0 / D1 / D5 evaluation hooks.
             </p>
+            <ul class="mini-list">
+              <li>OpenAgent tool bridge for `finance_research_run`</li>
+              <li>Audit-first workflow for financial-domain reasoning</li>
+            </ul>
           </article>
 
           <article class="project-card">
@@ -204,16 +218,96 @@
             </div>
             <h3>GitOps Control Plane for Agents</h3>
             <p>
-              A planned layer that maps tasks to branches/worktrees, runs OpenAgent or external runners,
-              triggers CI/eval gates, and exposes workflow results through a dashboard.
+              I am researching a workflow layer that maps agent tasks to branches/worktrees, runs OpenAgent
+              or external runners, triggers CI/eval gates, and exposes logs, reruns, and merge decisions in a dashboard.
             </p>
+            <ul class="mini-list">
+              <li>Codex GitOps workflow comparison</li>
+              <li>Branch-per-task + eval-first merge gate proposal</li>
+            </ul>
           </article>
+        </div>
+      </section>
+
+      <section class="section cv-section" id="cv" aria-labelledby="cv-title">
+        <div class="section-heading">
+          <p class="section-index">04</p>
+          <h2 id="cv-title">CV</h2>
+        </div>
+        <div class="cv-layout">
+          <div class="cv-summary">
+            <h3>William / LianWeiSQ</h3>
+            <p>
+              Agent Harness Engineer focused on building production-grade coding-agent infrastructure:
+              runtime loops, tool systems, context persistence, sandbox execution, observability, evals,
+              and GitOps-style development workflows.
+            </p>
+            <div class="cv-actions">
+              <a class="button primary" href="cv.md">View Markdown CV</a>
+              <a class="button secondary" href="https://github.com/LianWeiSQ">GitHub Profile</a>
+            </div>
+          </div>
+
+          <div class="cv-columns">
+            <div class="cv-card">
+              <span>Core Skills</span>
+              <ul>
+                <li>Agent runtime architecture and tool execution</li>
+                <li>Context engineering, compaction, and persistence</li>
+                <li>Trace, replay, evaluation, benchmark integration</li>
+                <li>Python, FastAPI, Go/Kubernetes, TypeScript UI</li>
+              </ul>
+            </div>
+            <div class="cv-card">
+              <span>Selected Contributions</span>
+              <ul>
+                <li>Built OpenAgent runtime, session ledger, eval and swarm direction</li>
+                <li>Designed GitOps workflow comparison for coding-agent delivery</li>
+                <li>Integrated domain agent workflows with audit and outcome evaluation</li>
+                <li>Maintained public GitHub portfolio and technical documentation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-list">
+            <article>
+              <time>2026 - Present</time>
+              <div>
+                <h4>OpenAgent / Agent Harness Runtime</h4>
+                <p>
+                  Lead personal open-source direction around observable coding agents: AgentLoop, tools,
+                  permissions, context pack snapshots, session parts, trace / replay, eval CI gates,
+                  Langfuse export, Terminal-Bench / Harbor adapters, and Swarm Function Kernel.
+                </p>
+              </div>
+            </article>
+            <article>
+              <time>2026</time>
+              <div>
+                <h4>BrainBox / Sandbox Infrastructure</h4>
+                <p>
+                  Researched and documented Kubernetes sandbox architecture for agent workloads, including
+                  Manager API, controller loops, Envoy routing, local kind / OrbStack workflows, CI/CD, and E2E validation.
+                </p>
+              </div>
+            </article>
+            <article>
+              <time>2026</time>
+              <div>
+                <h4>Fintech Agent / Domain Agent Case Study</h4>
+                <p>
+                  Built an auditable finance research agent with source confidence, event normalization,
+                  report persistence, OpenAgent tool bridge, and historical outcome evaluation hooks.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section" id="writing" aria-labelledby="writing-title">
         <div class="section-heading">
-          <p class="section-index">04</p>
+          <p class="section-index">05</p>
           <h2 id="writing-title">Writing & Research Notes</h2>
         </div>
         <div class="writing-list">
@@ -238,7 +332,7 @@
 
       <section class="section github-plan" id="github" aria-labelledby="github-title">
         <div class="section-heading">
-          <p class="section-index">05</p>
+          <p class="section-index">06</p>
           <h2 id="github-title">GitHub Operating Plan</h2>
         </div>
         <div class="plan-grid">
@@ -263,7 +357,7 @@
 
       <section class="section contact" id="contact" aria-labelledby="contact-title">
         <div>
-          <p class="section-index">06</p>
+          <p class="section-index">07</p>
           <h2 id="contact-title">Contact</h2>
           <p>
             如果你也在研究 coding agents、agent harness、AI-native SDLC、沙箱执行或评测系统，
