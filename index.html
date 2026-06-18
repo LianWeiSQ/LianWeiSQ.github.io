@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="William / LianWeiSQ 的个人主页：Agent Harness、OpenAgent、沙箱执行、评测系统与 AI 工程实践。"
+      content="廉威 / William 的个人主页：Agent Harness、AaaS Runtime、OpenAgent、5GC 微服务、沙箱执行、Trace/Eval 与 AI Infra 工程实践。"
     />
-    <meta name="theme-color" content="#f8fafc" />
-    <title>William · Agent Harness Engineer</title>
+    <meta name="theme-color" content="#f6f8fb" />
+    <meta property="og:title" content="廉威 / William - Agent Harness / AaaS Runtime" />
+    <meta
+      property="og:description"
+      content="4.5 年后端与 AI Agent 工程化经验，Huawei 5GC Committer，构建可恢复、可观测、可审计、可评测的 Agent Runtime。"
+    />
+    <title>廉威 · Agent Harness / AaaS Runtime</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,11 +28,11 @@
 
     <header class="site-header" data-header>
       <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="William homepage">
-          <span class="brand-mark">W</span>
+        <a class="brand" href="#top" aria-label="廉威 homepage">
+          <span class="brand-mark">LW</span>
           <span class="brand-copy">
-            <strong>William</strong>
-            <small>LianWeiSQ</small>
+            <strong>廉威</strong>
+            <small>William / LianWeiSQ</small>
           </span>
         </a>
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
@@ -36,194 +41,247 @@
         </button>
         <div class="nav-links" data-nav-links>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#projects">Works</a>
           <a href="#cv">CV</a>
-          <a href="#writing">Writing</a>
-          <a href="#github">GitHub Plan</a>
+          <a href="#evidence">Evidence</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
+      <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="mono-line">Agent Harness · Open Source · Evaluation</p>
-            <h1>William</h1>
-            <h2>Agent Harness Engineer</h2>
+            <p class="mono-line">Agent Harness / AaaS Runtime / AI Infra</p>
+            <h1 id="hero-title">廉威 / William</h1>
+            <h2>Agent Harness / AaaS Runtime 架构师方向</h2>
             <p class="hero-lead">
-              我在构建 OpenAgent 和一组围绕 Agent Harness 的工程系统：从工具调用、上下文、权限、沙箱执行，
-              到 trace、eval、swarm runner 与 GitOps 协作开发闭环。
+              4.5 年后端与 AI Agent 工程化经验，Huawei 5GC Committer。我的核心方向不是单点
+              Prompt 或 RAG Demo，而是把不确定的模型行为约束进可恢复、可观测、可审计、可评测的后端执行系统。
             </p>
             <p class="hero-lead english">
-              I build observable agent systems that turn coding agents from impressive demos into
-              auditable, testable, and repeatable engineering workflows.
+              I build the harness around AI agents: runtime loops, tool governance, context and memory,
+              sandbox execution, trace/replay/eval, and service boundaries that engineering teams can operate.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="https://github.com/LianWeiSQ/openagent-ai">View OpenAgent</a>
+              <a class="button primary" href="#projects">View Engineering Works</a>
               <a class="button secondary" href="#cv">Read CV</a>
             </div>
           </div>
 
           <aside class="profile-card" aria-label="Profile summary">
-            <div class="portrait-shell" aria-hidden="true">
-              <svg viewBox="0 0 220 220" role="img">
-                <defs>
-                  <linearGradient id="portraitGradient" x1="0" x2="1" y1="0" y2="1">
-                    <stop offset="0%" stop-color="#dbeafe" />
-                    <stop offset="48%" stop-color="#f8fafc" />
-                    <stop offset="100%" stop-color="#bbf7d0" />
-                  </linearGradient>
-                </defs>
-                <rect width="220" height="220" rx="38" fill="url(#portraitGradient)" />
-                <path
-                  d="M60 144c18-30 37-45 58-45 24 0 43 15 56 45"
-                  fill="none"
-                  stroke="#0f172a"
-                  stroke-width="9"
-                  stroke-linecap="round"
-                />
-                <circle cx="112" cy="78" r="34" fill="#0f172a" opacity=".92" />
-                <path d="M58 170h104" stroke="#2563eb" stroke-width="8" stroke-linecap="round" />
-                <path d="M74 185h72" stroke="#16a34a" stroke-width="6" stroke-linecap="round" />
-              </svg>
+            <div class="portrait-shell">
+              <img src="assets/headshot.png" alt="廉威 / William portrait" />
+            </div>
+            <div class="profile-name">
+              <strong>廉威</strong>
+              <span>上海 · 后端 / AI Infra / Agent Runtime</span>
             </div>
             <div class="profile-meta">
-              <span>Based in China</span>
-              <span>Building OpenAgent</span>
-              <span>Focus: Agent Harness</span>
+              <span>Target: AaaS Platform Architect</span>
               <span>GitHub: LianWeiSQ</span>
+              <span>Portfolio: lianweisq.github.io</span>
+              <span>Contact: GitHub / Email</span>
             </div>
           </aside>
+        </div>
+
+        <div class="metric-rail" aria-label="Career proof metrics">
+          <div>
+            <strong>4.5y</strong>
+            <span>后端与 AI Agent 工程化经验</span>
+          </div>
+          <div>
+            <strong>5GC</strong>
+            <span>Huawei Committer / 微服务架构</span>
+          </div>
+          <div>
+            <strong>+70%</strong>
+            <span>混合检索关键信息精度提升</span>
+          </div>
+          <div>
+            <strong>-40%</strong>
+            <span>工具调用冗余与 Token 成本下降</span>
+          </div>
+          <div>
+            <strong>10x</strong>
+            <span>5GC 微服务吞吐上限提升</span>
+          </div>
         </div>
       </section>
 
       <section class="section compact" id="about" aria-labelledby="about-title">
         <div class="section-heading">
           <p class="section-index">01</p>
-          <h2 id="about-title">About</h2>
+          <h2 id="about-title">Professional Summary</h2>
         </div>
-        <div class="about-layout">
-          <p>
-            我的长期方向是把 coding agent 从“能跑 demo”推进到“可交付、可观测、可评测、可复盘”的工程系统。
-            我主要贡献在模型之外的 harness 层：工具协议、上下文持久化、权限边界、沙箱运行时、trace / eval、
-            多 runner 编排，以及把 agent 变成团队软件交付流的一部分。
-          </p>
-          <div class="stat-list">
-            <div>
-              <strong>Runtime</strong>
-              <span>Built AgentLoop, tool execution, permissions, MCP, sessions</span>
-            </div>
-            <div>
-              <strong>Context</strong>
-              <span>Designed instruction snapshots, file state, compaction, session parts</span>
-            </div>
-            <div>
-              <strong>Evaluation</strong>
-              <span>Shipped trace, replay, CI gates, Terminal-Bench and Harbor adapters</span>
-            </div>
-          </div>
+        <div class="summary-grid">
+          <article class="summary-card lead-card">
+            <h3>我擅长把 AI Agent 从“能跑”推进到“能交付”。</h3>
+            <p>
+              当前主线聚焦 Agent Harness / AaaS Runtime：Run/Step/ToolCall/Artifact/Checkpoint/Event
+              建模、上下文与记忆、Tool/MCP/Skill 治理、权限与沙箱、Trace/Replay/Eval、HTTP/SSE Runtime
+              与 Model Gateway。
+            </p>
+          </article>
+          <article class="summary-card">
+            <span>Engineering Edge</span>
+            <p>
+              我把 5GC 分布式系统经验带入 Agent Runtime：可靠性、性能、灰度发布、资源隔离、可观测、版本交付，
+              这些是把 Agent 平台做成生产系统的底层肌肉。
+            </p>
+          </article>
+          <article class="summary-card">
+            <span>Positioning Boundary</span>
+            <p>
+              华为 AI4S 是工作经历；OpenAgent、BrainBox、Fintech Agent 是个人工程作品集。公开叙事聚焦
+              AaaS / Agent Runtime / Agent Tool Runtime / AI Coding Platform，不包装成完整 MaaS 一号位。
+            </p>
+          </article>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="now-title">
+      <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="section-heading">
           <p class="section-index">02</p>
-          <h2 id="now-title">News & Now</h2>
+          <h2 id="experience-title">Work Experience</h2>
         </div>
-        <ol class="timeline">
-          <li>
-            <time datetime="2026-06">2026.06</time>
-            <p>发布个人 GitHub Pages，开始围绕 Agent Harness Engineering 系统经营开源履历。</p>
-          </li>
-          <li>
-            <time datetime="2026-06">2026.06</time>
-            <p>梳理 OpenAgent 与 Codex GitOps 协作流差异，规划 `openagent-workflow` 外层控制面。</p>
-          </li>
-          <li>
-            <time datetime="2026-06">2026.06</time>
-            <p>推进 Swarm Function Kernel：function、OpenAgent、subprocess、HTTP、A2A runner 协议。</p>
-          </li>
-          <li>
-            <time datetime="2026-06">2026.06</time>
-            <p>完善 context persistence：context pack snapshots、session parts、resume evidence。</p>
-          </li>
-          <li>
-            <time datetime="2026-05">2026.05</time>
-            <p>把 Fintech Agent 作为金融领域 agent case study 接入 OpenAgent 工具体系。</p>
-          </li>
-        </ol>
+        <div class="experience-board">
+          <article class="experience-card">
+            <time>2024.12 - 2025.09</time>
+            <div>
+              <p class="role-line">华为技术有限公司 · 云计算 BU · 高级工程师 B / Committer</p>
+              <h3>AI4S / Multi-Agent 研发平台与记忆检索链路</h3>
+              <ul>
+                <li>参与企业级 Multi-Agent 研发平台建设，围绕需求拆解、意图规划、知识检索、工具调用、代码合规入库形成端到端闭环。</li>
+                <li>设计长/短期记忆 + 领域知识三层记忆模型，结合滑动窗口、语义分段、向量 + BM25 混合检索，关键信息检索精度提升约 70%。</li>
+                <li>研发基于长文本哈希编码的工具调用加速机制，减少重复工具调用与冗余生成，Token 消耗降低约 40%。</li>
+                <li>建立跨 Agent 上下文蒸馏与标签化映射方案，支撑复杂研发任务自动分解、状态同步和多 Agent 协作。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <time>2021.01 - 2024.12</time>
+            <div>
+              <p class="role-line">华为技术有限公司 · 分组控制开发部 · 高级工程师 B / 5GC Committer</p>
+              <h3>5G 核心网微服务架构设计、性能优化与云原生交付</h3>
+              <ul>
+                <li>参与 5GC 控制面从 0 到 1 的微服务架构设计与代码开发，作为项目组 PL 推进重点功能、微服务部署、性能优化和版本交付。</li>
+                <li>采用 DCI 架构进行复杂业务建模与服务解耦，沉淀 Role 接口组合、配置中心、预加载本地缓存等方案，数据库查询开销降低约 30%。</li>
+                <li>构建心跳检测、熔断降级、自适应流控、有界队列、多优先级队列和去重 DB 写等稳定性治理机制；性能提升约 20%，吞吐上限提升约 10 倍，定位效率提升约 80%。</li>
+                <li>集成 HPA 与金丝雀发布，Pod 副本从 3 扩展到 15 以应对峰值流量 3 倍增长，资源成本降低约 40%，迭代周期从 2 周缩短到 3 天。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading">
+          <p class="section-index">03</p>
+          <h2 id="capabilities-title">Capability Map</h2>
+        </div>
+        <div class="capability-grid">
+          <article>
+            <span>Agent Runtime</span>
+            <p>AgentLoop、Run/Step 状态机、ToolCall、Artifact、Checkpoint、Event、Session Ledger。</p>
+          </article>
+          <article>
+            <span>Tool / MCP / Skill</span>
+            <p>Tool Registry、Schema、权限、风险等级、版本、审计、MCP Bridge、Skill 生命周期。</p>
+          </article>
+          <article>
+            <span>Context / Memory</span>
+            <p>Context Budget、结构化 Compaction、File Context、短期/长期/领域记忆、RAG 混合检索。</p>
+          </article>
+          <article>
+            <span>Observability / Eval</span>
+            <p>JSONL Trace、Replay、Runtime Warning、Langfuse Export、Eval CI Gate、Regression。</p>
+          </article>
+          <article>
+            <span>Sandbox</span>
+            <p>Docker/K8s、Workspace Isolation、Envoy/ext_authz、资源/网络/Secret 边界、审计。</p>
+          </article>
+          <article>
+            <span>AI Platform</span>
+            <p>OpenAI-compatible API、Provider Registry、Model Routing、Token/Quota/Rate Limit、Fallback。</p>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
-          <p class="section-index">03</p>
-          <h2 id="projects-title">Selected Projects</h2>
+          <p class="section-index">04</p>
+          <h2 id="projects-title">Engineering Works</h2>
         </div>
-        <div class="project-grid">
-          <article class="project-card featured">
+        <div class="work-grid">
+          <article class="work-card featured">
             <div class="project-topline">
               <span>OpenAgent</span>
               <a href="https://github.com/LianWeiSQ/openagent-ai">GitHub</a>
             </div>
             <h3>Agent Harness Runtime</h3>
             <p>
-              I designed and implemented the core runtime direction: tool schema exposure, permission checks,
-              context persistence, session ledgers, trace events, eval gates, and a decoupled Swarm Function Kernel.
+              构建 Python Agent Harness Runtime，核心包括 AgentLoop、Provider Boundary、Tool Registry、
+              Permission Ruleset、Workspace Runtime、Session Ledger、Trace 与 Eval。
+            </p>
+            <div class="work-proof">
+              <span>context pack snapshot</span>
+              <span>session parts</span>
+              <span>replay / ci_gate</span>
+              <span>Terminal-Bench / Harbor adapter</span>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="project-topline">
+              <span>Runtime HTTP</span>
+              <span>Service Boundary</span>
+            </div>
+            <h3>OpenAgent Runtime HTTP / MCPHub / SkillHub</h3>
+            <p>
+              用 FastAPI 将 OpenAgent core 封装为 HTTP/SSE Runtime，P0 接口覆盖 session create、message、
+              events、abort、permission reply、question reply、config、health。
             </p>
             <ul>
-              <li>AgentLoop, builtin tools, MCP bridge, permission rulesets</li>
-              <li>Context pack snapshots, session parts, resume evidence</li>
-              <li>Eval / replay, CI gate, Langfuse export, benchmark adapters</li>
+              <li>RuntimeService 管理 session 生命周期、turn 取消、quota、provider registry。</li>
+              <li>Bearer API Key、request_id、structured logs、并发 quota 与安全字段裁剪。</li>
             </ul>
           </article>
 
-          <article class="project-card">
+          <article class="work-card">
             <div class="project-topline">
               <span>BrainBox</span>
               <span>Sandbox</span>
             </div>
-            <h3>Kubernetes Sandbox Platform</h3>
+            <h3>Go/Kubernetes Sandbox Infrastructure</h3>
             <p>
-              I use BrainBox as the sandbox infrastructure reference for agent execution: Manager APIs,
-              controller reconciliation, Envoy data-plane routing, GitLab CI, E2E tests, and local kind / OrbStack flows.
+              研究并建设 Go/Kubernetes 沙箱平台：Sandbox Manager HTTP API、Platform Controller、Envoy routing、
+              ext_authz、PostgreSQL 持久层和 Vue 控制台。
             </p>
-            <ul class="mini-list">
-              <li>Manager / Controller / Console architecture notes</li>
-              <li>CI pipeline and pjtest deployment runbook</li>
+            <ul>
+              <li>覆盖 environment、sandbox、pool、batch、exec、proxy、lifecycle 等 API。</li>
+              <li>明确文件、网络、进程、资源、Secret 和 artifact 回收边界。</li>
             </ul>
           </article>
 
-          <article class="project-card">
+          <article class="work-card">
             <div class="project-topline">
               <span>Fintech Agent</span>
-              <span>Domain Case</span>
+              <span>Eval Case Study</span>
             </div>
-            <h3>Auditable Financial Research Agent</h3>
+            <h3>垂类 Agent 评测样例</h3>
             <p>
-              I built this as a domain proof that agents need evidence chains: authority-first sources,
-              event normalization, confidence scoring, SQLite audit trail, reports, and D0 / D1 / D5 evaluation hooks.
+              构建金融研究 Agent 流水线，覆盖权威源采集、事件归一、证据质量评分、中文研究简报生成、
+              SQLite 审计和 D0/D1/D5 事后评估。
             </p>
-            <ul class="mini-list">
-              <li>OpenAgent tool bridge for `finance_research_run`</li>
-              <li>Audit-first workflow for financial-domain reasoning</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>OpenAgent Workflow</span>
-              <span>Planning</span>
-            </div>
-            <h3>GitOps Control Plane for Agents</h3>
-            <p>
-              I am researching a workflow layer that maps agent tasks to branches/worktrees, runs OpenAgent
-              or external runners, triggers CI/eval gates, and exposes logs, reruns, and merge decisions in a dashboard.
-            </p>
-            <ul class="mini-list">
-              <li>Codex GitOps workflow comparison</li>
-              <li>Branch-per-task + eval-first merge gate proposal</li>
+            <ul>
+              <li>证明垂类 Agent 必须保留 evidence、audit trail、degraded reason。</li>
+              <li>把 publishability gate、trace/replay 与 ex-post evaluation 纳入结果闭环。</li>
             </ul>
           </article>
         </div>
@@ -231,16 +289,15 @@
 
       <section class="section cv-section" id="cv" aria-labelledby="cv-title">
         <div class="section-heading">
-          <p class="section-index">04</p>
-          <h2 id="cv-title">CV</h2>
+          <p class="section-index">05</p>
+          <h2 id="cv-title">CV Snapshot</h2>
         </div>
         <div class="cv-layout">
           <div class="cv-summary">
-            <h3>William / LianWeiSQ</h3>
+            <h3>面向资深 Agent Runtime / AI Infra 后端工程师</h3>
             <p>
-              Agent Harness Engineer focused on building production-grade coding-agent infrastructure:
-              runtime loops, tool systems, context persistence, sandbox execution, observability, evals,
-              and GitOps-style development workflows.
+              目标 AaaS 平台架构师。强攻 Agent Harness、Tool Runtime、Context/Memory、Trace/Eval、
+              Sandbox 和 Model Gateway。优势是能把 Agent 的不确定性工程化为可恢复、可审计、可评测的后端任务系统。
             </p>
             <div class="cv-actions">
               <a class="button primary" href="cv.md">View Markdown CV</a>
@@ -250,108 +307,68 @@
 
           <div class="cv-columns">
             <div class="cv-card">
-              <span>Core Skills</span>
+              <span>Tech Stack</span>
               <ul>
-                <li>Agent runtime architecture and tool execution</li>
-                <li>Context engineering, compaction, and persistence</li>
-                <li>Trace, replay, evaluation, benchmark integration</li>
-                <li>Python, FastAPI, Go/Kubernetes, TypeScript UI</li>
+                <li>Go/Gin, Python/FastAPI, Redis, PostgreSQL/MySQL, Kafka, REST/SSE</li>
+                <li>Docker, Kubernetes, HPA, Canary, Prometheus, GitLab CI</li>
+                <li>Provider Registry, Model Routing, Token/Quota/Rate Limit, Fallback</li>
+                <li>架构设计、性能优化、可观测、故障定位、跨团队版本交付</li>
               </ul>
             </div>
             <div class="cv-card">
-              <span>Selected Contributions</span>
+              <span>Education & Languages</span>
               <ul>
-                <li>Built OpenAgent runtime, session ledger, eval and swarm direction</li>
-                <li>Designed GitOps workflow comparison for coding-agent delivery</li>
-                <li>Integrated domain agent workflows with audit and outcome evaluation</li>
-                <li>Maintained public GitHub portfolio and technical documentation</li>
+                <li>法国特鲁瓦技术大学 · 工程信息自动化（计算机视觉）硕士</li>
+                <li>上海大学 · 信息工程 · 中欧学院 · 211 双一流</li>
+                <li>英语 CET-6，法语 TEF B2</li>
               </ul>
             </div>
           </div>
 
-          <div class="experience-list">
-            <article>
-              <time>2026 - Present</time>
-              <div>
-                <h4>OpenAgent / Agent Harness Runtime</h4>
-                <p>
-                  Lead personal open-source direction around observable coding agents: AgentLoop, tools,
-                  permissions, context pack snapshots, session parts, trace / replay, eval CI gates,
-                  Langfuse export, Terminal-Bench / Harbor adapters, and Swarm Function Kernel.
-                </p>
-              </div>
-            </article>
-            <article>
-              <time>2026</time>
-              <div>
-                <h4>BrainBox / Sandbox Infrastructure</h4>
-                <p>
-                  Researched and documented Kubernetes sandbox architecture for agent workloads, including
-                  Manager API, controller loops, Envoy routing, local kind / OrbStack workflows, CI/CD, and E2E validation.
-                </p>
-              </div>
-            </article>
-            <article>
-              <time>2026</time>
-              <div>
-                <h4>Fintech Agent / Domain Agent Case Study</h4>
-                <p>
-                  Built an auditable finance research agent with source confidence, event normalization,
-                  report persistence, OpenAgent tool bridge, and historical outcome evaluation hooks.
-                </p>
-              </div>
-            </article>
+          <div class="keyword-panel">
+            <h3>100w 岗位叙事关键词</h3>
+            <div>
+              <span>Agent Runtime 不是 ReAct 节点串联，而是状态化、不确定、可恢复的后端任务系统。</span>
+              <span>Tool Runtime 需要治理 schema、权限、风险等级、幂等、副作用、审计、评测和生命周期。</span>
+              <span>Context 是当前运行态，Memory 是跨任务经验，Knowledge 是稳定领域事实，Trace 是执行证据。</span>
+              <span>Sandbox 的核心是文件、网络、进程、资源、Secret、artifact 和租户隔离。</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="writing" aria-labelledby="writing-title">
-        <div class="section-heading">
-          <p class="section-index">05</p>
-          <h2 id="writing-title">Writing & Research Notes</h2>
-        </div>
-        <div class="writing-list">
-          <a href="https://github.com/LianWeiSQ/openagent-ai">
-            <span>OpenAgent README</span>
-            <strong>Agent Harness Runtime with a decoupled Swarm Function Kernel</strong>
-          </a>
-          <a href="https://github.com/LianWeiSQ/LianWeiSQ.github.io/blob/main/notes/codex-gitops-workflow-vs-openagent.md">
-            <span>Research Note</span>
-            <strong>Codex GitOps 协作开发方式 vs OpenAgent 使用方式</strong>
-          </a>
-          <a href="https://github.com/LianWeiSQ/openagent-ai/blob/main/doc/context.md">
-            <span>Architecture</span>
-            <strong>Context persistence, session parts, and replayable agent evidence</strong>
-          </a>
-          <a href="https://github.com/LianWeiSQ">
-            <span>Course</span>
-            <strong>Claude Code architecture course: tools, permissions, QueryEngine, context</strong>
-          </a>
-        </div>
-      </section>
-
-      <section class="section github-plan" id="github" aria-labelledby="github-title">
+      <section class="section" id="evidence" aria-labelledby="evidence-title">
         <div class="section-heading">
           <p class="section-index">06</p>
-          <h2 id="github-title">GitHub Operating Plan</h2>
+          <h2 id="evidence-title">Evidence Chain</h2>
         </div>
-        <div class="plan-grid">
-          <div class="plan-card">
-            <strong>Weekly shipping</strong>
-            <p>每周至少合并一个可展示改进：README、demo、eval report、workflow prototype 或课程材料。</p>
+        <div class="evidence-layout">
+          <div class="evidence-list">
+            <a href="https://github.com/LianWeiSQ/openagent-ai">
+              <span>OpenAgent</span>
+              <strong>core/loop, core/tool, core/mcp, core/skill, core/context_pack, core/session, core/trace, core/eval</strong>
+            </a>
+            <a href="https://github.com/LianWeiSQ/openagent-ai/blob/main/doc/context.md">
+              <span>Context Docs</span>
+              <strong>context budget, structured compaction, instruction/file assets, session parts, replayable evidence</strong>
+            </a>
+            <a href="https://github.com/LianWeiSQ/LianWeiSQ.github.io/blob/main/notes/codex-gitops-workflow-vs-openagent.md">
+              <span>Workflow Research</span>
+              <strong>Codex GitOps 协作开发方式 vs OpenAgent 使用方式</strong>
+            </a>
+            <a href="https://github.com/LianWeiSQ">
+              <span>Portfolio</span>
+              <strong>GitHub/README/简历三处关键词保持一致，持续经营公开工程履历</strong>
+            </a>
           </div>
-          <div class="plan-card">
-            <strong>Evidence-first updates</strong>
-            <p>每个项目主页都要放架构图、运行命令、测试结果、trace/eval 证据和下一步 roadmap。</p>
-          </div>
-          <div class="plan-card">
-            <strong>Public narrative</strong>
-            <p>围绕 Agent Harness Engineering 持续写短文：工具、上下文、沙箱、评测、GitOps 协作。</p>
-          </div>
-          <div class="plan-card">
-            <strong>Portfolio hygiene</strong>
-            <p>清理缓存、补 license/status、固定 repo topics、维护 pinned repositories 和 release notes。</p>
-          </div>
+          <aside class="roadmap-card">
+            <h3>Next Stage</h3>
+            <p>
+              补齐 MaaS 执行面：vLLM/TGI/TensorRT-LLM、prefill/decode、KV Cache、continuous batching、
+              显存与副本调度；继续强化生产级 Runtime 细节：多实例 lease、dead-letter、reconciliation、
+              SSE 断线补发、ToolCall 副作用补偿。
+            </p>
+          </aside>
         </div>
       </section>
 
@@ -360,19 +377,20 @@
           <p class="section-index">07</p>
           <h2 id="contact-title">Contact</h2>
           <p>
-            如果你也在研究 coding agents、agent harness、AI-native SDLC、沙箱执行或评测系统，
-            欢迎通过 GitHub 交流。
+            如果你在研究 Agent Runtime、AI Infra、Agent Tool Runtime、AI Coding Platform、沙箱执行或评测系统，
+            欢迎通过 GitHub 或邮箱交流。
           </p>
         </div>
         <div class="contact-links">
           <a href="https://github.com/LianWeiSQ">GitHub</a>
           <a href="https://github.com/LianWeiSQ/openagent-ai">OpenAgent</a>
+          <a href="mailto:shangque_009@163.com">Email</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span data-year></span> William / LianWeiSQ. Built for GitHub Pages.</p>
+      <p>© <span data-year></span> 廉威 / William / LianWeiSQ. Built for GitHub Pages.</p>
       <a href="#top">Back to top</a>
     </footer>
 

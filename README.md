@@ -1,27 +1,26 @@
-# William / LianWeiSQ
+# 廉威 / William / LianWeiSQ
 
-Personal GitHub Pages site for William, focused on Agent Harness Engineering, OpenAgent, coding-agent infrastructure, evaluation systems, and AI-native software delivery.
+Personal GitHub Pages site for 廉威 / William, positioned around Agent Harness Engineering, AaaS Runtime, OpenAgent, coding-agent infrastructure, evaluation systems, sandbox execution, and AI Infra delivery.
 
 Live site: <https://lianweisq.github.io/>
 
 ## Positioning
 
-This site is built as a public technical profile rather than a generic portfolio. The main narrative is:
+This repository is a public technical CV website rather than a generic portfolio. The narrative is aligned with the updated Agent Harness / AaaS Runtime resume:
 
-- Turning coding agents from demos into auditable, testable, repeatable engineering workflows.
-- Building the model-external harness layer: tools, context, permissions, sandbox runtime, trace, replay, evaluation, and workflow orchestration.
-- Operating GitHub as a durable CV: projects, notes, contribution evidence, and progress records.
+- 4.5 years of backend and AI Agent engineering experience.
+- Huawei 5GC Committer background with distributed microservice, Kubernetes delivery, performance, reliability, and version delivery experience.
+- Focus on the model-external harness layer: AgentLoop, tool governance, context/memory, permissions, sandbox runtime, trace/replay/eval, HTTP/SSE runtime, and model gateway boundaries.
+- GitHub as durable evidence: engineering works, docs, research notes, CV, and operating rhythm.
 
 ## Highlights
 
-- **OpenAgent**: agent runtime direction covering AgentLoop, tool execution, MCP bridge, permissions, context snapshots, session ledgers, trace/replay, eval CI gates, Langfuse export, benchmark adapters, and Swarm Function Kernel.
-- **BrainBox**: Kubernetes sandbox infrastructure reference for agent workloads, including Manager API, controller reconciliation, Envoy routing, CI/CD, and E2E validation.
-- **Fintech Agent**: auditable domain-agent case study with evidence chains, event normalization, confidence scoring, report persistence, OpenAgent tool bridge, and D0/D1/D5 evaluation hooks.
-- **OpenAgent Workflow**: research direction for branch-per-task agent development, GitOps loops, eval-first merge gates, reruns, logs, and dashboard-driven review.
+- **OpenAgent**: Python Agent Harness Runtime covering AgentLoop, Provider Boundary, Tool Registry, Permission Ruleset, Workspace Runtime, Session Ledger, Trace, Eval, MCP, Skill, context pack snapshots, replay, and CI gates.
+- **OpenAgent Runtime HTTP / MCPHub / SkillHub**: FastAPI HTTP/SSE service boundary for session lifecycle, events, permission/question replies, quota, provider registry, structured logs, and deployable runtime shape.
+- **BrainBox**: Go/Kubernetes sandbox infrastructure reference for agent execution, including Sandbox Manager API, Platform Controller, Envoy routing, ext_authz, PostgreSQL, Vue console, CRD reconciliation, audit, metrics, and tracing.
+- **Fintech Agent**: vertical-domain agent evaluation case study with source collection, event normalization, evidence scoring, Chinese report generation, SQLite audit trail, publishability gate, trace/replay, and D0/D1/D5 ex-post evaluation.
 
-## CV
-
-The site includes a dedicated CV section and a Markdown resume:
+## Resume
 
 - Homepage CV section: <https://lianweisq.github.io/#cv>
 - Markdown CV: <https://lianweisq.github.io/cv.md>
@@ -53,11 +52,11 @@ http://127.0.0.1:4173
 
 ## Operating Rhythm
 
-- Update `News & Now` when a meaningful project milestone lands.
-- Keep `cv.md` aligned with the homepage CV section.
-- Add research notes under `notes/` when a workflow, architecture, or evaluation decision becomes reusable.
+- Keep homepage, `cv.md`, GitHub profile, and project READMEs aligned on the same keywords.
+- Update proof metrics only when there is real project/resume evidence.
+- Add research notes under `notes/` when workflow, architecture, or evaluation decisions become reusable.
 - Refresh preview screenshots after major visual changes.
 
 ## Design Direction
 
-The visual language is intentionally editorial and technical: calm paper-like background, crisp cards, restrained green/blue accents, and strong emphasis on readable contribution evidence.
+The visual language is an executive technical CV website: formal navy resume bars, paper-like background, dense but readable evidence cards, restrained cyan/green highlights, and a real portrait to make the site feel credible and personal.
